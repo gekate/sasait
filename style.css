@@ -1,0 +1,203 @@
+body {
+    margin: 0;
+  }
+  
+  .logo{
+  margin-left: 3%;
+  margin-top: 50px;
+  color: rgb(98, 0, 255);
+  }
+  
+  header{
+    background-color: #1c8b47;
+  }
+  
+  .top-menu{
+  background-color: rgb(77, 77, 77);
+  opacity: 50%;
+  padding: 0px 0 50px 0;
+  
+  }
+  
+  .list-menu{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    width: 1200px;
+    margin:auto;
+  }
+  
+  .link-menu{
+    color: rgb(0, 252, 134);
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-bottom: 1px solid white;
+  }
+  
+  .link-menu:hover{
+    border-bottom: none;
+  }
+  
+  .about-human{
+    background-color: #488DCD;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+  }
+  
+  .logotxt{
+    font-weight: 400;
+    font-size: 38px;
+    padding: 0 0 0 51px;
+  }
+  
+  .fot{
+    padding: 50px 0;
+  }
+  
+  .gleb{
+    padding-right: 300px;
+  }
+  
+  h1{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .info-video{
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  .txt-texta{
+    font-size: 23px;
+  }
+  
+  .info-video p{
+    font-weight: bold;
+    font-size: 50px;
+    padding: 50px 300px 0 0;
+  }
+  
+  .txt-text{
+    display: flex;
+    width: 1200px;
+    margin: 5px 0 20px 0;
+  }
+  
+  .txt-text p{
+    font-size: 20px;
+    width: 800px;
+    margin: auto;
+    padding-top: 40px;
+    line-height: 1.5;
+  }
+  
+  main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 1200px;
+    margin: auto;
+  }
+
+  .all-sup{
+    display: flex;
+   justify-content: space-between;
+  }
+
+  .sup{
+    display: flex;
+    flex-direction: column;
+    width: min-content;
+    margin: auto;
+  }
+
+  .sup-price{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+
+  .sup-foto{
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+  }
+  
+  footer{
+    background-color: #565656;
+  }
+  
+  .whatsap{
+    display: flex;
+  }
+  
+  .whatsapp{
+    height: 85px;
+    opacity: 50%;
+    padding: 20px 0 0 54px;
+  }
+  
+  .whatsap p{
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    color: #000;
+    padding-left: 20px;
+  }
+  
+  .insta{
+    width: 88px;
+    opacity: 50%;
+    margin: 50px 0 0 54px;
+  }
+  
+  .inst{
+    display: flex;
+    height: auto;
+  }
+  
+  .inst p{
+    font-weight: 400;
+    font-size: 32px;
+    padding:50px 0 0 20px;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .uwu{
+    display: flex;
+    margin-left: 24px;
+    margin-top: 50px;
+  }
+  
+  .vk{
+    width: 94px;
+    opacity: 50%;
+    padding-left: 20px;
+  }
+  
+  .uwu p{
+    font-weight: 400;
+    font-size: 32px;
+    color: #000;
+    padding-left: 20px;
+  }
+  
+  .href{
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+  }
+  
+  .href:hover{
+    border: none;
+  }
