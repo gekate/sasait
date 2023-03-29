@@ -1,46 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Корзина</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  </head>
+  <body>
     <header>
-        <nav class="top-menu">
-          <img class="logo" src="../images/img/logo.png">
-          <ul class="list-menu">
-            <li><a class="link-menu" href="index.html">Главная</a></li>
-            <li><a class="link-menu" href="rubish.html">Корзина</a></li>
-            <li><a class="link-menu" href="revies.html">Отзывы</a></li>
-            <li><a class="link-menu" href="index.html">Контакты</a></li>
-          </ul>
-        </nav>
-      </header>
-      <main>
-       
-      </main>
-      <footer>
+      <nav class="top-menu">
+        <a href="index.html">
+          <img class="logo" src="images/logo.png">
+        </a>
+        <ul class="menu">
+          <li><a class="menu_item" href="index.html">Главная</a></li>
+          <li><a class="menu_item" href="sups.html">Сапы</a></li>
+          <li><a class="menu_item" href="rubish.html">Корзина</a></li>
+          <li><a class="menu_item" href="login.html">Вход</a></li>
+        </ul>
+        <div class="menu_small_icon">
+          <div class="stick"></div>
+          <div class="stick"></div>
+          <div class="stick"></div>
+      </div>
+      <div class="menu-small">
+          <a class="menu_small_item" href="index.html">Главная</a>
+          <a class="menu_small_item" href="sups.html">Сапы</a>
+          <a class="menu_small_item" href="rubish.html">Корзина</a>
+          <a class="menu_small_item" href="login.html">Вход</a>
+      </div>
+      </nav>
+    </header>
+    <main>
+      <div class="sup">
+        <img class="sup-foto" src="images/universalnaya_sup-doska_my_sup_106_ocean.webp">
+        <div class="sup-price">
+          <a class="cart" href="#">27 200тыс.</a>
+        </div>
+      </div>
+      <div class="rubsup"></div>
+    </main>
+    <footer>
+      <div class="contakti">
         <div class="whatsap">
-          <img class="whatsapp" src="../images/img/whatsapp-messenger.png"/>
-          <p class="contacts">
-              whatsapp +79277131808
-          </p>
+          <img class="whatsapp" src="images/whatsapp-messenger.png"/>
+          <p class="contacts">whatsapp +79277131808</p>
         </div>
         <div class="inst">
-            <img class="insta" src="../images/img/Instagram_icon.png">
-            <p>
-              Инстаграм @grechishnikova_logo
-            </p>
+          <img class="insta" src="images/Instagram_icon.png"/>
+          <p>Инстаграм @grechishnikova_logo</p>
         </div>
         <div class="uwu">
-            <img class="vk" src="../images/img/vk-256x256.png">
-            <p>
-              vk: <a class="href" href="https://vk.com/grechishnikova_logo">vk.com</a>
-            </p>
+          <img class="vk" src="images/vk-256x256.png"/>
+          <p>
+            vk:
+            <a class="href" href="https://vk.com/grechishnikova_logo">vk.com</a>
+          </p>
         </div>
-      </footer>
-</body>
+      </div>
+    </footer>
+    <script src="anime.min.js"></script>
+    <script src="script.js"></script>
+    <script src="burger.js"></script>
+  </body>
 </html>
