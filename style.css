@@ -1,15 +1,18 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap'); 
+ body {
     margin: 0;
   }
   
   .logo{
   margin-left: 3%;
-  margin-top: 50px;
-  color: rgb(98, 0, 255);
+  padding-top: 2%;
+  color: rgb(118, 50, 228);
   }
   
   header{
-    background-color: #1c8b47;
+    background-color: #1cbef0;
+    width: 100%;
+    height: min-content;
   }
   
   .top-menu{
@@ -19,15 +22,16 @@ body {
   
   }
   
-  .list-menu{
+  .menu{
     display: flex;
     list-style: none;
     justify-content: space-evenly;
-    width: 1200px;
-    margin:auto;
+    align-items: center;
+    width: auto;
+    margin: auto;
   }
   
-  .link-menu{
+  .menu_item{
     color: rgb(0, 252, 134);
     text-decoration: none;
     font-size: 20px;
@@ -35,9 +39,89 @@ body {
     border-bottom: 1px solid white;
   }
   
-  .link-menu:hover{
+  .menu_item:hover{
     border-bottom: none;
   }
+
+.menu_small_icon {
+    display: none;
+}
+
+.menu-small {
+    display: none;
+    height: 2em;
+}
+
+.menu_small_item {
+    display: none;
+}
+
+.stick {
+    width: 80%;
+    height: 5px;
+    background: black;
+}
+
+@media (max-width: 820px) {
+  body{
+    width: 818px;
+  }
+
+  .logo{
+    margin-left: 13%;
+  }
+
+  .menu {
+      display: none;
+  }
+
+  .menu-small {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      width: 100%;
+      padding: 0;
+      position: absolute;
+      background: white;
+      transform: translateX(-100%);
+  }
+
+  .menu_small_item {
+      height: 2em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .menu_small_item:first-child {
+      padding-top: calc(50px + 2em);
+  }
+
+  .menu_small_icon {
+      position: absolute;
+      top: 1em;
+      left: 1em;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      z-index: 1;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: column;
+  }
+
+  .whatsapp{
+    display: none;
+  }
+
+  .insta{
+    display: none;
+  }
+
+  .vk{
+    display: none;
+  }
+}
   
   .about-human{
     background-color: #488DCD;
@@ -45,7 +129,7 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin: 5px;
+    margin: 0;
   }
   
   .logotxt{
@@ -87,11 +171,12 @@ body {
   
   .txt-text{
     display: flex;
-    width: 1200px;
+    width: 100%;
     margin: 5px 0 20px 0;
   }
   
   .txt-text p{
+    display: flex;
     font-size: 20px;
     width: 800px;
     margin: auto;
@@ -103,13 +188,99 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 1200px;
+    background-color: rgb(152, 143, 189);
+    width: 100%;
+    height: 100%;
     margin: auto;
+  }
+
+  .XD{
+    font-family: 'Roboto Condensed', sans-serif;
+    display: flex;
+    font-size: 100px;
+    margin: auto;
+    padding-top: 40px;
+    line-height: 1.5;
+  }
+
+  .hit{
+    font-family: 'Roboto Condensed', sans-serif;
+    display: flex;
+    font-size: 100px;
+    margin: auto;
+    padding-top: 40px;
+    line-height: 1.5;
+  }
+
+  .container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container p{
+    font-family: 'Roboto Condensed', sans-serif;
+    display: flex;
+    font-size: 50px;
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    line-height: 1.5;
+  }
+
+  form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .loga{
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    width: 380px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    background-color: #ff6c47;
+    color: #000;
+    font-size: large;
+  }
+
+  .parol{
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    width: 380px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    background-color: #ff6c47;
+    color: #000;
+    font-size: large;
+  }
+
+  .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 25px;
+    border-radius: 5px;
+    background-color: yellow;
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset
+  }
+
+  .btn:hover{
+    text-decoration: underline;
+    background-color: rgb(255, 255, 84);
+  }
+
+  .btn:active{
+      box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
   }
 
   .all-sup{
     display: flex;
-   justify-content: space-between;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
   }
 
   .sup{
@@ -131,43 +302,127 @@ body {
     width: 300px;
     height: 300px;
   }
+
+  .price{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    width: 105px;
+    height: 30px;
+    color: rgb(66, 77, 54);
+    background-color: rgb(255, 238, 0);
+    border: 1px solid rgb(99, 99, 99);
+    border-radius: 8px;
+    text-decoration: none;
+  }
+
+  .price:hover{
+    width: 105px;
+    height: 30px;
+    color: rgb(66, 77, 54);
+    background-color: rgb(251, 255, 0);
+    border: 0.5px solid rgb(99, 99, 99);
+    border-radius: 8px;
+    text-decoration: underline;
+  }
+
+  .price1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    width: 105px;
+    height: 30px;
+    color: rgb(66, 77, 54);
+    background-color: rgb(255, 238, 0);
+    border: 1px solid rgb(99, 99, 99);
+    border-radius: 8px;
+    text-decoration: none;
+  }
+
+  .price1:hover{
+    width: 105px;
+    height: 30px;
+    color: rgb(66, 77, 54);
+    background-color: rgb(251, 255, 0);
+    border: 0.5px solid rgb(99, 99, 99);
+    border-radius: 8px;
+    text-decoration: underline;
+  }
+
+  .cart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    width: 105px;
+    height: 30px;
+    color: rgb(66, 77, 54);
+    background-color: rgb(255, 238, 0);
+    border: 1px solid rgb(99, 99, 99);
+    border-radius: 8px;
+    text-decoration: none;
+  }
+
+  .cart:hover{
+    width: 105px;
+    height: 30px;
+    color: rgb(66, 77, 54);
+    background-color: rgb(251, 255, 0);
+    border: 0.5px solid rgb(99, 99, 99);
+    border-radius: 8px;
+    text-decoration: underline;
+  }
   
   footer{
     background-color: #565656;
+    width: 100%;
+    height: 100px;
+    margin-bottom: auto;
+  }
+
+  .contakti{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
   }
   
   .whatsap{
     display: flex;
+    justify-content: center;
   }
   
   .whatsapp{
-    height: 85px;
+    width: 50px;
+    height: 50px;
     opacity: 50%;
-    padding: 20px 0 0 54px;
+    padding: 30px 0 0 20px;
   }
   
   .whatsap p{
     font-weight: 400;
-    font-size: 32px;
-    line-height: 39px;
-    color: #000;
-    padding-left: 20px;
+    font-size: 22px;
+    padding:50px 0 0 20px;
+    text-align: center;
+    margin: 0;
   }
   
   .insta{
-    width: 88px;
+    width: 50px;
+    height: 50px;
     opacity: 50%;
-    margin: 50px 0 0 54px;
+    padding: 30px 0 0 20px;
   }
   
   .inst{
     display: flex;
-    height: auto;
+    height: 50px;
   }
   
   .inst p{
     font-weight: 400;
-    font-size: 32px;
+    font-size: 22px;
     padding:50px 0 0 20px;
     text-align: center;
     margin: 0;
@@ -175,21 +430,21 @@ body {
   
   .uwu{
     display: flex;
-    margin-left: 24px;
-    margin-top: 50px;
   }
   
   .vk{
-    width: 94px;
+    width: 50px;
+    height: 50px;
     opacity: 50%;
-    padding-left: 20px;
+    padding: 30px 0 0 20px;
   }
-  
+
   .uwu p{
     font-weight: 400;
-    font-size: 32px;
-    color: #000;
-    padding-left: 20px;
+    font-size: 22px;
+    padding:50px 0 0 20px;
+    text-align: center;
+    margin: 0;
   }
   
   .href{
