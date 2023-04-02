@@ -214,6 +214,7 @@
     display: flex;
     font-size: 100px;
     margin: auto;
+    margin-top: 102px;
     padding-top: 40px;
     line-height: 1.5;
   }
@@ -221,6 +222,7 @@
   .container{
     display: flex;
     flex-direction: column;
+    margin:172px 0 200px 0;
   }
 
   .container p{
@@ -233,6 +235,10 @@
     line-height: 1.5;
   }
 
+  .korza{
+    margin: 172px 0 200px 0;
+  }
+  
   form{
     display: flex;
     align-items: center;
@@ -246,7 +252,7 @@
     width: 380px;
     border-radius: 20px;
     margin-bottom: 30px;
-    background-color: #ff6c47;
+    background-color: #d4d4d4;
     color: #000;
     font-size: large;
   }
@@ -258,7 +264,7 @@
     width: 380px;
     border-radius: 20px;
     margin-bottom: 10px;
-    background-color: #ff6c47;
+    background-color: #d4d4d4;
     color: #000;
     font-size: large;
   }
