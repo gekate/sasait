@@ -194,6 +194,12 @@
     margin: auto;
   }
 
+  .bx-wrapper {
+    width: 775px;
+    background-color: rgb(152, 143, 189);
+    border: none;
+}
+
   .XD{
     font-family: 'Roboto Condensed', sans-serif;
     display: flex;
